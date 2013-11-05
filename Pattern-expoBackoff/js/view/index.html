@@ -1,0 +1,36 @@
+</br></br></br>
+
+<h3> Stock Pricing </h3>
+
+</br></br>
+<h4> All stocks price currently in remote database</h4>
+<ul ng-repeat="stock in stocks ">
+    <li>  Symbol = {{stock.symbol}}, Day = {{stock.day}}, Price = {{stock.price}} </li>                         
+</ul>
+
+</br></br>
+<h4> Get stock price for this day </h4>
+<form name="getStockForm" novalidate >
+
+<div class="form-group">
+    <div class="col-lg-8">
+           <input type="text" class="form-control" ng-model="symbol" id="symbol" placeholder="Symbol to query" name="symbol" required>
+    </div>
+</div>
+
+</br>
+<div class="form-group">
+    <div class="col-lg-8">
+           <input type="text" class="form-control" ng-model="day" id="day" placeholder="Day to query" name="day" required>
+    </div>
+</div>
+
+</form>
+
+</br>
+</br>
+<button type="button" class="btn btn-success" id="btnRegister" ng-click="getStockPrice()">Submit</button>
+</br> 
+Pulled from cache? {{fromCache}}
+
+&nbsp&nbsp&nbsp&nbsp Price: {{price}}

@@ -1,0 +1,21 @@
+</br></br></br>
+
+<h3> Sample question: 1 + 2 = ? </h3>
+
+<form name="addCommentForm" novalidate >
+<div class="form-group">
+
+    <div class="col-lg-8">
+         <input type="text" class="form-control" ng-model="comment" id="comment" placeholder="Add a reply" name="comment" required>
+          
+    </div>
+</div>
+</form>
+
+<button type="button" class="btn btn-success" id="btnRegister" ng-click="addComment()">Submit</button>
+
+</br></br>
+<h4> Replies </h4>
+<ul ng-repeat="reply in replies ">
+    <li>  {{reply}} </li>                         
+</ul>

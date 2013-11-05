@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	 <title> Proxy Cache Pattern</title>
+
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+		
+<body style="display: block;">  
+	<div class="container">
+	<div ng-view>
+	</div>	
+	</div>
+	<!-- Initialization -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+	<!-- Angular library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+	
+	<!-- Angular initialization -->
+	<script src="js/app.js" ></script>
+
+	<!-- controllers --> 
+	<script src="js/controller/homeController.js"></script> 
+
+	<!-- Model --> 
+	<script src="js/model/repository.js"></script>
+	<script src="js/model/stockModel.js"></script>
+	<script src="js/model/stockCache.js"></script>
+
+
+</body>
+</html>
